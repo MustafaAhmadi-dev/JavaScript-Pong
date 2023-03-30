@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Pong Game JavaScript</title>
+  </head>
+  <body>
+    <main>
+      <i class="fas fa-cog active" id="settings"></i>
+
+      <div class="panel">
+        <div class="panel__content">
+          <i class="fas fa-times" id="panelX"></i>
+
+          <br /><label for="" class="radio">
+            <input class="dark" type="radio" value="dark" name="pol" />Dark
+            theme
+            <input class="light" type="radio" value="light" name="pol" />Light
+            theme
+          </label>
+
+          <button id="reset" onclick="restartGame()">Reset</button>
+
+        </div>
+      </div>
+      <canvas id="table" width="600" height="400"></canvas>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
